@@ -1,9 +1,11 @@
+
 public abstract class Estado {
     Conta conta;
     Estado(Conta conta){
         this.conta = conta;
     }
 
-    public abstract void onDeposito();
-    public abstract void onSaque();
+    public abstract void onDeposito(double valor);
+    public abstract void onSaque(double valor);
+
 }
